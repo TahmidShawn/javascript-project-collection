@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 244, 244);
+    padding: 60px 20px;
+    min-width: 500px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    margin: 20px auto;
+    font-size: 50px;
+    background-color: rgb(210, 255, 137);
+    width: 60%;
+}
+.container button {
+    cursor: pointer;
+    padding: 15px 45px;
+}
