@@ -1,4 +1,5 @@
 const app = document.getElementById("app");
+const nav = document.getElementById("nav");
 
 async function render(page) {
     const response = await fetch(`./pages/${page}.html`);
@@ -8,14 +9,13 @@ async function render(page) {
     app.innerHTML = html;
 }
 
-document.addEventListener("click", (e) => {
+nav.addEventListener("click", (e) => {
+    // console.log(e.target.dataset.page);
     if (e.target.matches("[data-page]")) {
         e.preventDefault();
 
         const page = e.target.dataset.page;
-
         location.hash = page;
-
         render(page);
     }
 });
